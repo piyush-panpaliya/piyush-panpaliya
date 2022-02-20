@@ -8,7 +8,7 @@
 <h3> 👨🏻‍💻 &nbsp;Me </h3>
 
 - 🎓 &nbsp; Currently a Junior in High School
-- :rocket: &nbsp; Learning; Front dev with nextjs and serverless stack
+- :rocket: &nbsp; Learning; Front dev with nextjs 
 - 💼 &nbsp; I live in MH/INDIA
 
 <h3>🛠 Tech Stack</h3>
