@@ -20,8 +20,12 @@
 - ⚡ &nbsp; Netlify | Serverless func | Auth0 | Firebase
 - 🖥 &nbsp; Illustrator| Photoshop | InDesign | Canva
 
- <img height="180em" src="https://github-readme-stats.vercel.app/api?username=piyush-panpaliya&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
- <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=piyush-panpaliya&exclude_repo=KNN-Image-Classification&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
+<table>
+  <tr>
+    <td valign='center'><img height="180em" src="https://github-readme-stats.vercel.app/api?username=piyush-panpaliya&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" /></td>
+    <td valign='center'><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=piyush-panpaliya&exclude_repo=KNN-Image-Classification&show_icons=true&hide_border=true&layout=compact&langs_count=8"/></td>
+</tr>
+</table>
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=TypeScript&logoColor=007ACC)
