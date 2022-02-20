@@ -20,6 +20,7 @@
 - ⚡ &nbsp; Netlify | Serverless func | Auth0 | Firebase
 - 🖥 &nbsp; Illustrator| Photoshop | InDesign | Canva
 
+ <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=piyush-panpaliya&hide_border=true" />
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=TypeScript&logoColor=007ACC)
