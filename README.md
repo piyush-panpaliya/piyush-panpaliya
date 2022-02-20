@@ -71,3 +71,9 @@
 <h2 align="center">
    I ❤ Frontend Dev.
 </h2>
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
