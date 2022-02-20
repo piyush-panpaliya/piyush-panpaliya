@@ -72,8 +72,3 @@
    I ❤ Frontend Dev.
 </h2>
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
