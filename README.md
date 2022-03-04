@@ -14,11 +14,11 @@
 <h3>🛠 Tech Stack</h3>
 
 - 🌐 &nbsp; JavaScript | NodeJS | ReactJS | NextJS | Python 
-- 🌐 &nbsp; HTML | CSS  | Tailwindcss | Php | Nest.JS
+- 🌐 &nbsp; HTML | CSS  | Tailwindcss 
 - 🛢 &nbsp; FaundDB 
 - 🔧 &nbsp; Git | Github | Vscode | Linux
 - ⚡ &nbsp; Netlify | Serverless func | Auth0 | Firebase
-- 🖥 &nbsp; Illustrator| Photoshop | InDesign | Canva
+- 🖥 &nbsp; Illustrator| Photoshop | Filmora | Canva
 
 <table>
   <tr>
