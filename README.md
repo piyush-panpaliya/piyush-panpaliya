@@ -7,7 +7,7 @@
 
 <h3> 👨🏻‍💻 &nbsp;Me </h3>
 
-- 🎓 &nbsp; Currently a Junior in High School
+- 🎓 &nbsp; Currently a Senior in High School
 - :rocket: &nbsp; Learning; Frontend dev with nextjs 
 - 💼 &nbsp; I live in MH/INDIA
 
