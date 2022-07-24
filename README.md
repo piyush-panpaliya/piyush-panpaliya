@@ -15,9 +15,9 @@
 
 - 🌐 &nbsp; JavaScript | NodeJS | ReactJS | NextJS | Python 
 - 🌐 &nbsp; HTML | CSS  | Tailwindcss 
-- 🛢 &nbsp; FaundDB 
-- 🔧 &nbsp; Git | Github | Vscode | Linux
-- ⚡ &nbsp; Netlify | Serverless func | Auth0 | Firebase
+- 🛢 &nbsp; FaundDB | MongoDB
+- 🔧 &nbsp; Git | Github | Vscode | Linux 
+- ⚡ &nbsp; Netlify | Cloudflare | Auth0 | Vercel | AWS
 - 🖥 &nbsp; Illustrator| Photoshop | Filmora | Canva
 
 <table>
@@ -42,7 +42,7 @@
 ![Netlify](https://img.shields.io/badge/-Netlify-000?&logo=Netlify)
 ![Heroku](https://img.shields.io/badge/-Heroku-000?&logo=Heroku)
 ![Postman](https://img.shields.io/badge/-Postman-000?&logo=Postman)
-![Firebase](https://img.shields.io/badge/-Firebase-000?&logo=Firebase)
+)
 ![Auth0](https://img.shields.io/badge/-Auth0-000?&logo=Auth0)
 ![Ant Design](https://img.shields.io/badge/-Ant%20Design-000?&logo=Ant-Design)
 ![Material UI](https://img.shields.io/badge/-Material%20UI-000?&logo=Material-UI)
