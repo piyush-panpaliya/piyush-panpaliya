@@ -17,7 +17,7 @@
 - 🌐 &nbsp; HTML | CSS  | Tailwindcss 
 - 🛢 &nbsp; FaundDB | MongoDB
 - 🔧 &nbsp; Git | Github | Vscode | Linux 
-- ⚡ &nbsp; Netlify | Cloudflare | Auth0 | Vercel | AWS
+- ⚡ &nbsp; Netlify | Cloudflare | Auth0 | Vercel | AWS | Digitalocean
 - 🖥 &nbsp; Illustrator| Photoshop | Filmora | Canva
 
 <table>
