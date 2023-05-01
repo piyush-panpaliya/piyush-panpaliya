@@ -13,9 +13,9 @@
 
 <h3>🛠 Tech Stack</h3>
 
-- 🌐 &nbsp; JavaScript | NodeJS | ReactJS | NextJS | Python 
+- 🌐 &nbsp; TypeScript | NodeJS | ReactJS | NextJS | Python 
 - 🌐 &nbsp; HTML | CSS  | Tailwindcss 
-- 🛢 &nbsp; FaundDB | MongoDB
+- 🛢 &nbsp; FaundDB | MongoDB | MySql
 - 🔧 &nbsp; Git | Github | Vscode | Linux 
 - ⚡ &nbsp; Netlify | Cloudflare | Auth0 | Vercel | AWS | Digitalocean
 - 🖥 &nbsp; Illustrator| Photoshop | Filmora | Canva
