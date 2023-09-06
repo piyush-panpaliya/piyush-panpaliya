@@ -7,18 +7,18 @@
 
 <h3> 👨🏻‍💻 &nbsp;Me </h3>
 
-- 🎓 &nbsp; Currently a Senior in High School
-- :rocket: &nbsp; Learning; Frontend dev with nextjs 
-- 💼 &nbsp; I live in MH/INDIA
+- 🎓 &nbsp; Currently a freshman at IIT, Mandi
+- :rocket: &nbsp; Learning; GoLang
+- 💼 &nbsp; I live in HP/INDIA
 
 <h3>🛠 Tech Stack</h3>
 
-- 🌐 &nbsp; TypeScript | NodeJS | ReactJS | NextJS | Python 
+- 🌐 &nbsp; TypeScript | NodeJS | NextJS | Python 
 - 🌐 &nbsp; HTML | CSS  | Tailwindcss 
-- 🛢 &nbsp; FaundDB | MongoDB | MySql
+- 🛢 &nbsp; Postgres | MongoDB | MySql
 - 🔧 &nbsp; Git | Github | Vscode | Linux 
-- ⚡ &nbsp; Netlify | Cloudflare | Auth0 | Vercel | AWS | Digitalocean
-- 🖥 &nbsp; Illustrator| Photoshop | Filmora | Canva
+- ⚡ &nbsp; Cloudflare | Vercel | AWS | Digitalocean
+- 🖥 &nbsp; Illustrator | Photoshop | Canva
 
 <table>
   <tr>
@@ -69,6 +69,6 @@
 <br>
 
 <h2 align="center">
-   I ❤ Frontend Dev.
+   I ❤ OpenSource.
 </h2>
 
