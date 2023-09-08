@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 const File = () => {
 	return (
 		<div className='border-b-[1px] border-[#607B96]/50 py-2 px-4 flex flex-col'>
-			<div className='py-1  flex items-center gap-2'>
+			<Link href='/about-me/bio' className='py-1  flex items-center gap-2'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='9'
@@ -31,8 +32,8 @@ const File = () => {
 					/>
 				</svg>
 				<p>Bio</p>
-			</div>
-			<div className='py-1  flex items-center gap-2'>
+			</Link>
+			<Link href='/about-me/interest' className='py-1  flex items-center gap-2'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='9'
@@ -60,8 +61,8 @@ const File = () => {
 					/>
 				</svg>
 				<p>Interest</p>
-			</div>
-			<div className='py-1  flex items-center gap-2'>
+			</Link>
+			<Link href='/about-me/edu' className='py-1  flex items-center gap-2'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='13'
@@ -88,8 +89,11 @@ const File = () => {
 					/>
 				</svg>
 				<p>Education</p>
-			</div>
-			<div className='py-1 pl-5  flex items-center gap-2'>
+			</Link>
+			<Link
+				href='/about-me/edu/high-school'
+				className='py-1 pl-5  flex items-center gap-2'
+			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='17'
@@ -103,8 +107,11 @@ const File = () => {
 					/>
 				</svg>
 				<p>high-school</p>
-			</div>
-			<div className='py-1 pl-5 flex items-center gap-2 mb-2'>
+			</Link>
+			<Link
+				href='/about-me/edu/university'
+				className='py-1 pl-5 flex items-center gap-2 mb-2'
+			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='17'
@@ -118,7 +125,7 @@ const File = () => {
 					/>
 				</svg>
 				<p>university</p>
-			</div>
+			</Link>
 		</div>
 	)
 }
