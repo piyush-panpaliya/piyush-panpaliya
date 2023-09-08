@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
 	return (
 		<main className='flex flex-col items-center justify-center grow'>
@@ -9,16 +11,19 @@ export default function Home() {
 						<p className='text-[#4D5BCE] text-3xl'> &gt; Front-end developer</p>
 					</div>
 					<div>
-						<p>{'// complete the game to continue'}</p>
-						<p>{'// you can also see it on my Github page'}</p>
-						<p className='text-white space-x-2'>
+						{/* <p>{'// complete the game to continue'}</p> */}
+						<p>{'// you can check out my Github page'}</p>
+						<Link
+							href='https://github.com/piyush-panpaliya'
+							className='text-white space-x-2'
+						>
 							<span className='text-[#4D5BCE]'> const </span>
 							<span className='text-[#43D9AD]'> githubLink </span>
 							<span>=</span>
 							<span className='text-[#E99287]'>
-								“https://github.com/example/url”
+								“https://github.com/piyush-panpaliya”
 							</span>
-						</p>
+						</Link>
 					</div>
 				</div>
 				<div className='relative z-0'>

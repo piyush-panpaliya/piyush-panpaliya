@@ -4,7 +4,7 @@ import File from './File'
 const Contact = () => {
 	return (
 		<>
-			<div className='border-b-[1px] border-[#607B96]/50 py-2 px-4 flex items-center gap-2'>
+			<div className='border-b-[1px] border-[#607B96]/50 py-2 px-4 flex items-center gap-2 '>
 				<svg
 					width='9'
 					height='7'
@@ -60,7 +60,7 @@ const SideBar = () => {
 	const path = usePathname()
 	if (path == '/') return null
 	return (
-		<div className='w-[240px] xl:w-[312px] flex flex-col  border-r-[1px] border-[#607B96]/50'>
+		<div className='w-[200px] xl:w-[280px] flex flex-col  border-r-[1px] border-[#607B96]/50'>
 			<div className='border-b-[1px] border-[#607B96]/50 py-2 px-4 flex items-center gap-2 mb-4'>
 				<svg
 					width='9'
