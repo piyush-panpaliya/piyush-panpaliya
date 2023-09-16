@@ -1,8 +1,8 @@
 export default function Home() {
 	return (
 		<main className='flex flex-col items-center justify-center grow '>
-			<main className='flex flex-col items-center justify-center w-3/4 '>
-				<p className='text-white text-sm'>
+			<main className='flex flex-col items-center justify-center max-w-[50vw]'>
+				<p className='text-white text-sm '>
 					Highly skilled and detail-oriented web developer with a strong
 					background in front-end. Experienced in creating responsive and
 					user-friendly websites and web applications. Proficient in various

@@ -75,6 +75,10 @@
 	}
 }
 
+.dev {
+	@apply border-2 border-red-500;
+}
+
 @layer components {
 	.btn {
 		@apply border-red-500 border-2;

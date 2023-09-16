@@ -24,11 +24,11 @@ const projectList = [
 const Project = () => {
 	return (
 		<div className='flex flex-col items-center py-4  grow '>
-			<div className='flex flex-col items-center w-3/4 gap-8'>
+			<div className='flex flex-col items-center w-[60vw] gap-8 '>
 				{projectList.map((project, i) => (
-					<div key={i} className='flex flex-col items-center py-4'>
+					<div key={i} className='flex flex-col items-center py-4 '>
 						<p className='text-white text-2xl mb-4'>{project.name}</p>
-						<p>{project.info}</p>
+						<p className=''>{project.info}</p>
 						<ul className='pl-4 my-4 list-disc'>
 							{project.points.map((point, i) => (
 								<li key={i}>{point}</li>

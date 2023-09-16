@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Home() {
 	return (
-		<main className='flex flex-col items-center justify-center grow'>
+		<main className='flex flex-col items-center justify-center grow '>
 			<div className='flex justify-between gap-24'>
 				<div className='flex flex-col pt-8 gap-12'>
 					<div className='flex flex-col items-start'>
@@ -55,9 +55,9 @@ export default function Home() {
 									width='880.938'
 									height='830.128'
 									filterUnits='userSpaceOnUse'
-									color-interpolation-filters='sRGB'
+									colorInterpolationFilters='sRGB'
 								>
-									<feFlood flood-opacity='0' result='BackgroundImageFix' />
+									<feFlood floodOpacity='0' result='BackgroundImageFix' />
 									<feBlend
 										mode='normal'
 										in='SourceGraphic'
@@ -76,9 +76,9 @@ export default function Home() {
 									width='863.983'
 									height='782.77'
 									filterUnits='userSpaceOnUse'
-									color-interpolation-filters='sRGB'
+									colorInterpolationFilters='sRGB'
 								>
-									<feFlood flood-opacity='0' result='BackgroundImageFix' />
+									<feFlood floodOpacity='0' result='BackgroundImageFix' />
 									<feBlend
 										mode='normal'
 										in='SourceGraphic'
