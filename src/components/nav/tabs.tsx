@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Tab from './Tab';
+import Link from 'next/link'
+import Tab from './Tab'
 
 const Tabs = () => {
   return (
@@ -18,7 +18,7 @@ const Tabs = () => {
         _contact-me
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Tabs;
+export default Tabs

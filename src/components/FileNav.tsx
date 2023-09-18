@@ -1,16 +1,17 @@
-'use client';
-import { usePathname } from 'next/navigation';
-import React from 'react';
+'use client'
+import { usePathname } from 'next/navigation'
+import React from 'react'
 const switcher = {
   '/about-me': '',
   '/about-me/bio': 'Bio',
   '/about-me/edu': 'Education ',
   '/about-me/interest': 'Experience',
-};
+  '/projects': 'Projects',
+}
 const FileNav = () => {
-  const path = usePathname();
-  if (path == '/') return null;
-  const name = switcher[path as keyof typeof switcher] || 'info';
+  const path = usePathname()
+  if (path == '/') return null
+  const name = switcher[path as keyof typeof switcher] || 'info'
   return (
     <div className="flex h-10 border-b-[1px] border-[#607B96]/50">
       <div className="flex h-full min-w-[160px] items-center  justify-between gap-6 border-r-[1px] border-[#607B96]/50 pl-4 pr-2">
@@ -41,7 +42,7 @@ const FileNav = () => {
         </svg>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FileNav;
+export default FileNav

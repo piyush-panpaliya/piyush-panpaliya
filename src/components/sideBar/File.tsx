@@ -1,10 +1,11 @@
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { cn } from '@/lib/utils'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 const Education = () => {
-  const [show, setShow] = useState(true);
+  const path = usePathname()
+  const [show, setShow] = useState(true)
   return (
     <>
       <div
@@ -13,7 +14,7 @@ const Education = () => {
       >
         <div
           className={cn(
-            'flex items-center justify-center',
+            'flex transform items-center justify-center transition-transform',
             show ? '' : '-rotate-90',
           )}
         >
@@ -43,13 +44,13 @@ const Education = () => {
             fill="#3A49A4"
           />
         </svg>
-        <p>Education</p>
+        <p className={cn(path.includes('edu') && 'text-white')}>Education</p>
       </div>
       {show && (
         <div>
           <Link
             href="/about-me/edu/high-school"
-            className="flex items-center  gap-2 py-1 pl-5"
+            className="flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,11 +64,13 @@ const Education = () => {
                 fill="#81A1C1"
               />
             </svg>
-            <p>high-school</p>
+            <p className={cn(path.includes('high-school') && 'text-white')}>
+              page
+            </p>
           </Link>
           <Link
             href="/about-me/edu/university"
-            className="mb-2 flex items-center gap-2 py-1 pl-5"
+            className="mb-2 flex items-center gap-2 py-1 pl-5 animate-in slide-in-from-top"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,15 +84,18 @@ const Education = () => {
                 fill="#81A1C1"
               />
             </svg>
-            <p>university</p>
+            <p className={cn(path.includes('university') && 'text-white')}>
+              page
+            </p>
           </Link>
         </div>
       )}
     </>
-  );
-};
+  )
+}
 const Bio = () => {
-  const [show, setShow] = useState(true);
+  const path = usePathname()
+  const [show, setShow] = useState(true)
   return (
     <>
       <div
@@ -98,7 +104,7 @@ const Bio = () => {
       >
         <div
           className={cn(
-            'flex items-center justify-center',
+            'flex transform items-center justify-center transition-transform',
             show ? 'rotate-90' : '',
           )}
         >
@@ -129,12 +135,12 @@ const Bio = () => {
             fill="#E99287"
           />
         </svg>
-        <p>Bio</p>
+        <p className={cn(path.includes('bio') && 'text-white')}>Bio</p>
       </div>
       {show && (
         <Link
           href="/about-me/bio"
-          className="flex items-center  gap-2 py-1 pl-5"
+          className="flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -152,10 +158,11 @@ const Bio = () => {
         </Link>
       )}
     </>
-  );
-};
+  )
+}
 const Interest = () => {
-  const [show, setShow] = useState(true);
+  const path = usePathname()
+  const [show, setShow] = useState(true)
   return (
     <>
       <div
@@ -164,7 +171,7 @@ const Interest = () => {
       >
         <div
           className={cn(
-            'flex items-center justify-center',
+            'flex transform items-center justify-center transition-transform',
             show ? 'rotate-90' : '',
           )}
         >
@@ -195,12 +202,14 @@ const Interest = () => {
             fill="#43D9AD"
           />
         </svg>
-        <p>Interest</p>
+        <p className={cn(path.includes('interest') && 'text-white')}>
+          Interest
+        </p>
       </div>
       {show && (
         <Link
           href="/about-me/interest"
-          className="flex items-center  gap-2 py-1 pl-5"
+          className="flex items-center gap-2 py-1 pl-5 animate-in slide-in-from-top"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -214,15 +223,17 @@ const Interest = () => {
               fill="#81A1C1"
             />
           </svg>
-          <div>page</div>
+          <div className={cn(path.includes('interest') && 'text-white')}>
+            page
+          </div>
         </Link>
       )}
     </>
-  );
-};
+  )
+}
 const File = () => {
-  const [show, setShow] = useState(true);
-  const path = usePathname();
+  const [show, setShow] = useState(true)
+  const path = usePathname()
   return (
     <div>
       <div
@@ -259,7 +270,7 @@ const File = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default File;
+export default File

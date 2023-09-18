@@ -1,10 +1,10 @@
-'use client';
-import { usePathname } from 'next/navigation';
-import File from './File';
-import { useState } from 'react';
-import { cn } from '@/lib/utils';
+'use client'
+import { usePathname } from 'next/navigation'
+import File from './File'
+import { useState } from 'react'
+import { cn } from '@/lib/utils'
 const Contact = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
   return (
     <div className="flex flex-col">
       <div
@@ -70,12 +70,12 @@ const Contact = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
 const SideBar = () => {
-  const path = usePathname();
-  if (path == '/') return null;
+  const path = usePathname()
+  if (path == '/') return null
   return (
     <div className="flex w-[200px] flex-col justify-between  border-r-[1px] border-[#607B96]/50 xl:w-[280px] ">
       {path.includes('about-me') && (
@@ -90,7 +90,7 @@ const SideBar = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default SideBar;
+export default SideBar
