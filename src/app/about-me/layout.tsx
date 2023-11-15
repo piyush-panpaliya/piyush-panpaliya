@@ -8,7 +8,9 @@ const layout = ({ children }: { children: ReactNode }) => {
           {Array(16)
             .fill(0)
             .map((a, n) => (
-              <p className="text-sm">{n}</p>
+              <p key={n} className="text-sm">
+                {n}
+              </p>
             ))}
         </div>
         {children}
