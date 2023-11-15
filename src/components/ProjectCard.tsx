@@ -7,7 +7,7 @@ const ProjectCard = ({
   project: Projectlist & { no: number }
 }) => {
   return (
-    <div className="">
+    <div className="w-[25vw]">
       <p className="text-[#5565E8]">
         {`Project ${project.no} `}
         <span className="text-foreground">{`// ${project.name}`}</span>
@@ -16,7 +16,11 @@ const ProjectCard = ({
         <img src={`${project.name.toLowerCase()}.webp`} className=" w-full" />
         <div className="flex flex-col gap-3 px-3 py-2">
           <p className="w-full">{project.info}</p>
-          <Link href={project.link} className=" rounded-sm bg-[#1C2B3A] p-2">
+          <Link
+            target="_blank"
+            href={project.link}
+            className=" rounded-sm bg-[#1C2B3A] p-2"
+          >
             View Project
           </Link>
         </div>

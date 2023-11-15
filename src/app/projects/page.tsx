@@ -23,8 +23,8 @@ const projectList = [
 export type Projectlist = (typeof projectList)[0]
 const Project = () => {
   return (
-    <div className="dev flex grow flex-col items-center p-4 ">
-      <div className=" flex  items-center gap-8">
+    <div className=" flex h-full w-full flex-col items-center p-4 ">
+      <div className=" flex w-full gap-8">
         {projectList.map((p, i) => (
           <ProjectCard key={i} project={{ ...p, no: i }} />
         ))}

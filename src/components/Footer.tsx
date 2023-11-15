@@ -9,6 +9,7 @@ const Footer = () => {
         </p>
         <div className=" flex border-r-[1px] border-[#607B96]/50 ">
           <Link
+            target="_blank"
             href="https://twitter.com/piyush_json"
             className="border-r-[1px] border-[#607B96]/50 px-[4px] py-[8px] xl:px-[8px] 2xl:py-[12px] "
           >
@@ -38,6 +39,7 @@ const Footer = () => {
             </svg>
           </Link>
           <Link
+            target="_blank"
             href="https://linkedin.com/in/piyush-panpaliya"
             className="border-r-[1px] border-[#607B96]/50 px-[4px] py-[8px] xl:px-[8px] 2xl:py-[12px] "
           >
@@ -56,6 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <Link
+        target="_blank"
         href="https://github.com/piyush-panpaliya"
         className="flex items-center gap-2 border-l-[1px] border-[#607B96]/50 px-[8px] py-[8px] align-middle xl:px-[16px] 2xl:py-[12px] "
       >

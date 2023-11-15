@@ -21,14 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex min-h-screen w-full  flex-col overflow-hidden bg-black px-5 py-5 text-sm">
+        <div className="flex h-screen w-full  flex-col overflow-hidden bg-black px-5 py-5 text-sm">
           <div className="flex h-full grow flex-col rounded-md border-[1px] border-[#607B96]/50 bg-background">
             <Nav />
-            <div className=" flex w-full grow">
+            <div className="flex w-full grow">
               <SideBar />
               <div className="flex grow flex-col">
                 <FileNav />
-                <div className="flex grow flex-col items-center justify-center">
+                <div className="flex grow flex-col items-center justify-center overflow-auto">
                   {children}
                 </div>
               </div>

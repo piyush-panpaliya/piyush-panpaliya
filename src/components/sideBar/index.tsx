@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 const Contact = () => {
   const [show, setShow] = useState(false)
   return (
-    <div className="flex flex-col">
+    <div className=" flex flex-col">
       <div
         onClick={() => setShow((show) => !show)}
         className="flex h-10 items-center gap-2 border-y-[1px] border-[#607B96]/50 px-4 py-2 hover:cursor-pointer"
@@ -77,7 +77,7 @@ const SideBar = () => {
   const path = usePathname()
   if (path == '/') return null
   return (
-    <div className="flex w-[200px] flex-col justify-between  border-r-[1px] border-[#607B96]/50 xl:w-[280px] ">
+    <div className="flex w-[200px] shrink-0 flex-col  justify-between border-r-[1px] border-[#607B96]/50 xl:w-[280px] ">
       {path.includes('about-me') && (
         <>
           <File />
