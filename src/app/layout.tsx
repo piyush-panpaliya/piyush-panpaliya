@@ -5,6 +5,7 @@ import { Fira_Code } from 'next/font/google'
 import Footer from '@/components/Footer'
 import SideBar from '@/components/sideBar'
 import FileNav from '@/components/FileNav'
+import Divider from '@/components/Divider'
 
 const inter = Fira_Code({ preload: true, subsets: ['latin'] })
 
@@ -24,8 +25,10 @@ export default function RootLayout({
         <div className="flex h-screen w-full  flex-col overflow-hidden bg-black px-5 py-5 text-sm">
           <div className="flex h-full grow flex-col rounded-md border-[1px] border-[#607B96]/50 bg-background">
             <Nav />
+            <Divider dir="horizontal" />
             <div className="flex w-full grow">
               <SideBar />
+              <Divider dir="vertical" />
               <div className="flex grow flex-col">
                 <FileNav />
                 <div className="flex grow flex-col items-center justify-center overflow-auto">

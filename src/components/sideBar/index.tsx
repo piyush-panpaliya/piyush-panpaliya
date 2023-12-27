@@ -1,15 +1,18 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import File from './File'
+import Projects from './Projects'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
+import Divider from '../Divider'
 const Contact = () => {
   const [show, setShow] = useState(false)
   return (
     <div className=" flex flex-col">
       <div
         onClick={() => setShow((show) => !show)}
-        className="flex h-10 items-center gap-2 border-y-[1px] border-[#607B96]/50 px-4 py-2 hover:cursor-pointer"
+        className="flex h-10 items-center gap-2 border-t-[1px] border-[#607B96]/50 px-4 py-2 hover:cursor-pointer"
       >
         <div
           className={cn(
@@ -35,6 +38,7 @@ const Contact = () => {
       </div>
       {show && (
         <>
+          <Divider dir="horizontal" />
           <div className=" mt-4 flex items-center gap-2 px-4 py-2">
             <svg
               width="17"
@@ -73,11 +77,23 @@ const Contact = () => {
   )
 }
 
+export const FindMe = () => {
+  return (
+    <div>
+      <div>
+        <Link href="https://instagram.com/piyush.json" target="_blank">
+          instagram
+        </Link>
+      </div>
+    </div>
+  )
+}
+
 const SideBar = () => {
   const path = usePathname()
   if (path == '/') return null
   return (
-    <div className="flex w-[200px] shrink-0 flex-col  justify-between border-r-[1px] border-[#607B96]/50 xl:w-[280px] ">
+    <div className="flex w-[200px] shrink-0  flex-col justify-between xl:w-[280px] ">
       {path.includes('about-me') && (
         <>
           <File />
@@ -86,7 +102,13 @@ const SideBar = () => {
       )}
       {path.includes('projects') && (
         <>
-          <p>projects</p>
+          <Projects />
+        </>
+      )}
+      {path.includes('contact-me') && (
+        <>
+          <Contact />
+          <FindMe />
         </>
       )}
     </div>

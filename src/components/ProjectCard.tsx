@@ -7,7 +7,7 @@ const ProjectCard = ({
   project: Projectlist & { no: number }
 }) => {
   return (
-    <div className="w-[25vw]">
+    <div className="w-full">
       <p className="text-[#5565E8]">
         {`Project ${project.no} `}
         <span className="text-foreground">{`// ${project.name}`}</span>

@@ -12,8 +12,7 @@ const Tabs = () => {
         ))}
       </div>
       <Link
-        target="_blank"
-        href="https://twitter.com/piyush_json"
+        href="/contact-me"
         className="border-l-[1px] border-[#607B96]/50  px-[16px] py-[12px] xl:px-8 2xl:py-[18px] "
       >
         _contact-me

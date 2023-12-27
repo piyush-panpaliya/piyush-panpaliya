@@ -1,16 +1,20 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 const Education = () => {
   const path = usePathname()
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
+  const router = useRouter()
   return (
     <>
       <div
         className="flex  items-center gap-2 py-1 hover:cursor-pointer"
-        onClick={() => setShow((show) => !show)}
+        onClick={() => {
+          setShow((show) => (path.includes('edu') ? !show : true))
+          router.push('/about-me/edu/university')
+        }}
       >
         <div
           className={cn(
@@ -50,7 +54,10 @@ const Education = () => {
         <div>
           <Link
             href="/about-me/edu/high-school"
-            className="flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top"
+            className={cn(
+              'flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top',
+              path.includes('high') && 'text-white',
+            )}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +77,10 @@ const Education = () => {
           </Link>
           <Link
             href="/about-me/edu/university"
-            className="mb-2 flex items-center gap-2 py-1 pl-5 animate-in slide-in-from-top"
+            className={cn(
+              'flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top',
+              path.includes('uni') && 'text-white',
+            )}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,11 +105,15 @@ const Education = () => {
 }
 const Bio = () => {
   const path = usePathname()
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
+  const router = useRouter()
   return (
     <>
       <div
-        onClick={() => setShow((show) => !show)}
+        onClick={() => {
+          setShow((show) => (path.includes('bio') ? !show : true))
+          router.push('/about-me/bio')
+        }}
         className="flex  items-center gap-2 py-1 hover:cursor-pointer"
       >
         <div
@@ -140,7 +154,10 @@ const Bio = () => {
       {show && (
         <Link
           href="/about-me/bio"
-          className="flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top"
+          className={cn(
+            'flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top',
+            path.includes('bio') && 'text-white',
+          )}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +171,7 @@ const Bio = () => {
               fill="#81A1C1"
             />
           </svg>
-          <div>page</div>
+          <div className={cn(path.includes('bio') && 'text-white')}>page</div>
         </Link>
       )}
     </>
@@ -162,11 +179,15 @@ const Bio = () => {
 }
 const Interest = () => {
   const path = usePathname()
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
+  const router = useRouter()
   return (
     <>
       <div
-        onClick={() => setShow((show) => !show)}
+        onClick={() => {
+          setShow((show) => (path.includes('int') ? !show : true))
+          router.push('/about-me/interest')
+        }}
         className="flex  items-center gap-2 py-1 hover:cursor-pointer"
       >
         <div
@@ -209,7 +230,10 @@ const Interest = () => {
       {show && (
         <Link
           href="/about-me/interest"
-          className="flex items-center gap-2 py-1 pl-5 animate-in slide-in-from-top"
+          className={cn(
+            'flex items-center  gap-2 py-1 pl-5 animate-in slide-in-from-top',
+            path.includes('int') && 'text-white',
+          )}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +284,7 @@ const File = () => {
             />
           </svg>
         </div>
-        <p className="text-white">personal-info</p>
+        <p className="text-white">personal</p>
       </div>
       {show && (
         <div className="mb-4 flex flex-col px-4 py-2">

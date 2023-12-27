@@ -4,9 +4,11 @@ import React from 'react'
 const switcher = {
   '/about-me': '',
   '/about-me/bio': 'Bio',
-  '/about-me/edu': 'Education ',
+  '/about-me/edu/high-school': 'Education ',
+  '/about-me/edu/university': 'Education ',
   '/about-me/interest': 'Experience',
   '/projects': 'Projects',
+  '/contact-me': 'contacts',
 }
 const FileNav = () => {
   const path = usePathname()

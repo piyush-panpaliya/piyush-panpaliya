@@ -24,7 +24,7 @@ export type Projectlist = (typeof projectList)[0]
 const Project = () => {
   return (
     <div className=" flex h-full w-full flex-col items-center p-4 ">
-      <div className=" flex w-full gap-8">
+      <div className=" grid w-full grid-cols-3 items-stretch gap-8 ">
         {projectList.map((p, i) => (
           <ProjectCard key={i} project={{ ...p, no: i }} />
         ))}

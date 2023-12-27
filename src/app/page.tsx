@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex grow flex-col items-center justify-center ">
       <div className="flex justify-between gap-24">
-        <div className="flex flex-col gap-12 pt-8">
+        <div className=" flex flex-col gap-12 pt-8">
           <div className="flex flex-col items-start">
             <p className="ml-1 text-lg text-[#E5E9F0]">Hi all. I am</p>
             <p className="mb-2 text-5xl  text-[#E5E9F0]">Piyush Panpaliya</p>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="relative z-0">
           <img className="w-[25vw]" src="bg.png" alt="img" />
-          <div className="absolute left-[-150px] top-[-180px] z-[-1] w-[200%]">
+          <div className="absolute left-[-150px] top-[-180px] z-[-1] w-[180%]">
             <svg
               width="100%"
               viewBox="0 0 1114 1030"
