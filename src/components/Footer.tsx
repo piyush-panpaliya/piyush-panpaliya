@@ -2,16 +2,16 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className="flex  w-full items-center justify-between border-t-[1px] border-[#607B96]/50  text-xs">
-      <div className="flex items-center">
-        <p className=" border-r-[1px] border-[#607B96]/50 px-[8px] py-[8px] xl:px-[16px] 2xl:py-[12px]">
+    <div className="flex min-h-0 w-full items-center justify-between border-t-[1px] border-[#607B96]/50  text-xs">
+      <div className="flex h-full items-center">
+        <p className="h-full border-r-[1px] border-[#607B96]/50  px-[8px] py-[8px] xl:px-[16px] 2xl:py-[12px]">
           Find me in:
         </p>
         <div className=" flex border-r-[1px] border-[#607B96]/50 ">
           <Link
             target="_blank"
             href="https://twitter.com/piyush_json"
-            className="border-r-[1px] border-[#607B96]/50 px-[4px] py-[8px] xl:px-[8px] 2xl:py-[12px] "
+            className="border-r-[1px] border-[#607B96]/50 p-[8px]  2xl:p-[12px] "
           >
             <svg
               width="20"
@@ -41,7 +41,7 @@ const Footer = () => {
           <Link
             target="_blank"
             href="https://linkedin.com/in/piyush-panpaliya"
-            className="border-r-[1px] border-[#607B96]/50 px-[4px] py-[8px] xl:px-[8px] 2xl:py-[12px] "
+            className="  p-[8px]  2xl:p-[12px] "
           >
             <svg
               className="bg-foreground"

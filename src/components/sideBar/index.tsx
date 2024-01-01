@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import Divider from '../Divider'
 const Contact = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   return (
     <div className=" flex flex-col">
       <div
