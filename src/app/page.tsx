@@ -418,8 +418,8 @@ export default function Home() {
                 style={{ background: 'rgba(1, 20, 35, 0.19)' }}
                 className=" w-full flex-col rounded-md px-3 pb-2 pt-4 text-[11px] font-light leading-[14px]  text-white"
               >
-                <p>// use keyboard</p>
-                <p>// arrows to play</p>
+                <p>{'// use keyboard'}</p>
+                <p>{'// arrows to play'}</p>
                 <div className="mt-3 grid w-full grid-cols-3 gap-x-0.5 gap-y-[3px] align-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -513,6 +513,7 @@ export default function Home() {
                     .map((_, n) =>
                       n <= 6 ? (
                         <svg
+                          key={n}
                           xmlns="http://www.w3.org/2000/svg"
                           width="22"
                           height="22"
@@ -542,6 +543,7 @@ export default function Home() {
                         </svg>
                       ) : (
                         <svg
+                          key={n}
                           xmlns="http://www.w3.org/2000/svg"
                           width="22"
                           height="22"
