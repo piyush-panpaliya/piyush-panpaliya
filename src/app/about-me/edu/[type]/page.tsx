@@ -1,8 +1,6 @@
 import { Info, ed } from '@/lib/ed'
 
 export async function generateStaticParams() {
-  const posts = await fetch('https://.../posts').then((res) => res.json())
-
   return [
     {
       slug: 'university',
