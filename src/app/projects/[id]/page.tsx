@@ -1,5 +1,18 @@
 import { Project, projects } from '@/lib/projects'
 
+export async function generateStaticParams() {
+  const posts = await fetch('https://.../posts').then((res) => res.json())
+
+  return [
+    {
+      slug: 'university',
+    },
+    {
+      slug: 'high-school',
+    },
+  ]
+}
+
 const Section = ({ params: { id } }: { params: { id: string } }) => {
   const info = projects.find((e) => e.slug === id)
   if (!info) return <div>404</div>

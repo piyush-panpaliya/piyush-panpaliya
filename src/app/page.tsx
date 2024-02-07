@@ -1,6 +1,25 @@
+'use client'
+import { SnakeGame } from '@/game'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 export default function Home() {
+  // useEffect(() => {
+  //   const game = new SnakeGame()
+  //   game.start()
+  //   document.addEventListener('keydown', (e) => game.handleClick(e))
+  //   const st = setInterval(() => {
+  //     const res = game.clock()
+  //     if (!res) {
+  //       clearInterval(st)
+  //     }
+  //   }, 200)
+  //   return () => {
+  //     game.reset()
+  //     clearInterval(st)
+  //     document.removeEventListener('keydown', (e) => game.handleClick(e))
+  //   }
+  // }, [])
   return (
     <main className="flex grow flex-col items-center justify-center ">
       <div className="flex justify-between gap-24">
@@ -406,13 +425,14 @@ export default function Home() {
                 </radialGradient>
               </defs>
             </svg>
-            <div
+            <canvas
+              id="game"
               style={{
                 background: 'rgba(1, 22, 39, 0.84)',
                 boxShadow: '1px 5px 11px 0px rgba(2, 18, 27, 0.71) inset',
               }}
-              className="h-full grow  rounded-md "
-            ></div>
+              className="h-full w-64  rounded-md "
+            ></canvas>
             <div className="flex h-full w-[42%] flex-col ">
               <div
                 style={{ background: 'rgba(1, 20, 35, 0.19)' }}
