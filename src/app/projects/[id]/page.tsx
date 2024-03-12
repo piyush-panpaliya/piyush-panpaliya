@@ -11,6 +11,8 @@ export async function generateStaticParams() {
   ]
 }
 
+export const dynamicParams = false
+
 const Section = ({ params: { id } }: { params: { id: string } }) => {
   const info = projects.find((e) => e.slug === id)
   if (!info) return <div>404</div>
