@@ -3,10 +3,10 @@ import { Project, projects } from '@/lib/projects'
 export async function generateStaticParams() {
   return [
     {
-      slug: 'university',
+      id: 'university',
     },
     {
-      slug: 'high-school',
+      id: 'high-school',
     },
   ]
 }

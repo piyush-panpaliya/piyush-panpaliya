@@ -1,12 +1,12 @@
 import { Info, ed } from '@/lib/ed'
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return [
     {
-      slug: 'university',
+      type: 'university',
     },
     {
-      slug: 'high-school',
+      type: 'high-school',
     },
   ]
 }
